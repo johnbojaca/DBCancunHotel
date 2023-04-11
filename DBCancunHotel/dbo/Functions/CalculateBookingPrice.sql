@@ -1,0 +1,25 @@
+﻿CREATE FUNCTION dbo.CalculateBookingPrice(
+    @START_DATE DATE,
+    @FINAL_DATE DATE,
+    @ROOM_NUMBER INT,
+    @ADULTS INT,
+    @CHILDS INT
+)
+RETURNS DECIMAL(18,2)
+AS 
+BEGIN
+    DECLARE @BASE_VALUE DECIMAL(18,2);
+    DECLARE @RET DECIMAL(18,2);
+
+    SELECT @BASE_VALUE = BaseValue
+    FROM dbo.Room WITH(NOLOCK)
+    WHERE RoomNumber = @ROOM_NUMBER
+
+    SELECT @RET = SUM((Adult*@ADULTS + Child*@CHILDS)*@BASE_VALUE)
+    FROM dbo.DailyDiscount WITH(NOLOCK)
+    WHERE   DateDiscount >= @START_DATE AND
+            DateDiscount <= @FINAL_DATE
+    
+    RETURN @RET
+END;
+

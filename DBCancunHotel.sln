@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBCancunHotel", "DBCancunHotel\DBCancunHotel.sqlproj", "{10437FAB-A39F-44FE-A847-4501349F2DE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10437FAB-A39F-44FE-A847-4501349F2DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10437FAB-A39F-44FE-A847-4501349F2DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10437FAB-A39F-44FE-A847-4501349F2DE2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{10437FAB-A39F-44FE-A847-4501349F2DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10437FAB-A39F-44FE-A847-4501349F2DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10437FAB-A39F-44FE-A847-4501349F2DE2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEFEA773-794C-4870-AD5F-BB4361BDEA97}
+	EndGlobalSection
+EndGlobal
